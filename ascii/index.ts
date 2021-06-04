@@ -1,8 +1,7 @@
-function wordEqual(word : string) : number {
-	var i:number;
+function wordSum(word:string) : number {
+	var i:number = 0;
 	var sum:number = 0;
 	for(i=0; i<word.length; i++) {
-		// use ASCII encoding with offset
 		sum += asciiNum(word[i])
 	}
 	return sum;
@@ -16,5 +15,5 @@ function asciiNum(char:string) : number {
 		return asciiCode;
 }
 
-console.log("QUARTER is worth");
-console.log(wordEqual("QUARTER"));
+console.log("QUARTER is worth num");
+console.log(wordSum("QUARTERSD"));
