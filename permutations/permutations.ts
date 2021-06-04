@@ -2,24 +2,25 @@
 // n!, n factorial is the total combinations
 class Permutate {
 
-	constructor(itemsArr, algo) {
-		var this.itemsArr: number[]
-		this.itemsArr = itemsArr 
+	public arr : number[];
+
+	constructor(arr: number[], algo) {
+		this.arr = arr 
 	}
 
 	iterate() {
 		var i:number
-		for(i=0; i < arr.length; i++) {
-			if(arr[i] < arr[i+1]) {
-				newArr = algo.process(i, )
+		for(i=0; i < this.arr.length; i++) {
+			if(this.arr[i] < this.arr[i+1]) {
+				//newArr = algo.process(i, )
 			}
 		}	
 	}
 
 	// swap in place to save memory
 	swap(i1, i2) {
-		arr[n1], arr[n2] = arr[n2], arr[n1]
-		return array;
+		this.arr[i1], this.arr[i2] = this.arr[i2], this.arr[i1]
+		return this.arr;
 	}
 
 }

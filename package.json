@@ -1,0 +1,24 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "Algorithms",
+  "main": "perm.test.js",
+  "dependencies": {
+    "jest": "^27.0.4",
+    "sum": "^0.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natesire/algorithms.git"
+  },
+  "author": "nate sire",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natesire/algorithms/issues"
+  },
+  "homepage": "https://github.com/natesire/algorithms#readme"
+}
