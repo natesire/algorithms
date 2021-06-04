@@ -1,11 +1,11 @@
 function wordEqual(word : string) : number {
-    var i:number;
-    var sum:number = 0;
-    for(i=0; i<word.length; i++) {
-        // use ASCII encoding with offset
-        sum += asciiNum(word[i])
-    }
-		return sum;
+	var i:number;
+	var sum:number = 0;
+	for(i=0; i<word.length; i++) {
+		// use ASCII encoding with offset
+		sum += asciiNum(word[i])
+	}
+	return sum;
 }
 
 function asciiNum(char:string) : number {
