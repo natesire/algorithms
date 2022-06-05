@@ -1,2 +1,2 @@
 # algorithms
-Algorithms in Java Script, Node, Type Script
+Algorithms in Java Script, Node JS, Type Script, C++
