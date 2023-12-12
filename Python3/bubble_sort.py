@@ -6,8 +6,8 @@ def bubble_sort(arr):
     for i in range(len(sorted)):
         # for each element in the array
         for j in range(len(sorted)):
-            # if the element is greater than the next element
-            if sorted[i] < sorted[j]:
+            # < will produce ascending, > will produce descending
+            if sorted[i] > sorted[j]:
                 # swap the elements
                 temp = sorted[i];
                 sorted[i] = sorted[j];
