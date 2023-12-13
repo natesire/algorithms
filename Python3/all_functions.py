@@ -1,40 +1,25 @@
+# straight forward way to analyze all the built-in functions and methods for various types
+
 import math
 import string
 
-i = 1
-print("int")
-print(dir(i))
-print("\n")
+def print_methods(target):
+    methods_or_functions = dir(target)
+    count_methods = len(methods_or_functions)
+    # get type of target
+    target_type = type(target)
+    print(f'{count_methods} {target_type} methods or functions {methods_or_functions}\n')
 
-f = 1.1
-print("float")
-print(dir(f))
-print("\n")
+print_methods(1)
+print_methods(1.1)
+print_methods(math)
+print_methods(string)
+print_methods([1,2,3])
+print_methods({1,2,3})
+print_methods({'key': 'value'})
+print_methods(True)
 
-print("math")
-print(dir(math))
-print("\n")
-
-print("string")
-print(dir(string))
-print("\n")
-
-list_var = [1, 2, 3]
-print("list")
-print(dir(list_var))
-print("\n")
-
-set = {1,2,3,4,5,6,7,8,9,10}
-print("set")
-print(dir(set))
-print("\n")
-
-dict_var = {'key': 'value'}
-print("dictionary")
-print(dir(dict_var))
-print("\n")
-
-bool = True
-print("bool:")
-print(dir(bool))
-print("\n")
+# check if these match exactly
+# all the built in methods for Python are returned in a dictionary
+print_methods(__builtins__)
+print(dir(__builtins__))
