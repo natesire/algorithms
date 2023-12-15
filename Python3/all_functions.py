@@ -18,6 +18,5 @@ for (index, val) in enumerate(types):
     print_methods(type)
 
 # all the built in methods for Python are returned in a dictionary
-print_methods(__builtins__)
 print(dir(__builtins__))
 
