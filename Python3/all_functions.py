@@ -12,8 +12,10 @@ def print_methods(module_or_type):
         print(f'{method}()')
 
 types = [1, 1.1, "str", [1,2,3], {1,2,3}, {'key': 'value'}, True]
-for t in types:
-    print_methods(t)
+    
+# iterate val with index
+for (index, val) in enumerate(types):
+    print_methods(type)
 
 # all the built in methods for Python are returned in a dictionary
 print_methods(__builtins__)
